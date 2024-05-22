@@ -1,9 +1,6 @@
 from flask import Flask, request, render_template
 import pandas as pd
-# import numpy as np
 import pickle
-# from sklearn.feature_extraction import DictVectorizer
-# from sklearn.linear_model import LinearRegression
 import os
     app = Flask(__name__, template_folder='templates', static_folder='static')
 
