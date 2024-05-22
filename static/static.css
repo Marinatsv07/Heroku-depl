@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8eff5; /* Light blue background for the whole page */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 400px; /* Fixed width of the container */
+}
+
+h1 {
+    color: #0056b3; /* Blue color for the heading */
+    font-size: 24px; /* Larger font size for the heading */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="number"], input[type="submit"] {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc; /* Light grey border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    width: 90%; /* Relative width to container */
+    font-size: 16px; /* Larger font size for readability */
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #0056b3; /* Blue background for the submit button */
+    border: none;
+    cursor: pointer;
+    font-weight: bold; /* Bolder font for the submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #003975; /* Darker blue on hover */
+}
+
+label {
+    font-size: 16px; /* Larger font size for labels */
+    display: block;
+    margin-top: 20px;
+}

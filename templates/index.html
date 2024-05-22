@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Trip Duration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static.css') }}?v=1.3">
+</head>
+<body>
+    <div class="container">
+        <h1>Predict Trip Duration</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="PULocationID">Pickup Location ID:</label>
+                <input type="text" id="PULocationID" name="PULocationID" required pattern="\d{2,3}" placeholder="Enter 2-3 digits" title="Please enter a two or three-digit number">
+            </div>
+            <div class="form-group">
+                <label for="DOLocationID">Dropoff Location ID:</label>
+                <input type="text" id="DOLocationID" name="DOLocationID" required pattern="\d{2,3}" placeholder="Enter 2-3 digits" title="Please enter a two or three-digit number">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Predict">
+            </div>
+        </form>
+        <h2>{{ prediction_text }}</h2>
+    </div>
+</body>
+</html>
