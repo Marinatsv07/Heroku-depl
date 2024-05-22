@@ -1,2 +1,1 @@
-
-web: gunicorn "app:servflask()"
+web: gunicorn app:app
